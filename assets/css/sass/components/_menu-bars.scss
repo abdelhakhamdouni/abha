@@ -1,0 +1,28 @@
+.menu-bars{
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5px;
+    position: absolute;
+    z-index: 9999;
+    left: 1em;
+    top: 1em;
+    cursor: pointer;
+    span{
+        height: 4px;
+        background-color: rgb(240, 240, 240);
+        margin-bottom: 5px;
+        transition: width .3s;
+    }
+    &:hover{
+        span{width: 80% !important;}
+    }
+    span:nth-of-type(1){width: 50%;}
+    span:nth-of-type(2){width:65%;}
+    span:nth-of-type(3){width: 80%;}
+  
+}
