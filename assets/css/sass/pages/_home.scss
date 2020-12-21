@@ -417,14 +417,18 @@
         padding-bottom: 2em;
         display: none;
     }
+    .intro{
+        padding-bottom: 0;
+    }
     .intro .container{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-bottom: 3em;
         .card{
             transform: perspective(0);
-            width: 95%;
+            width: 90%;
             margin-bottom: 1em;
             &::after{
                 display: none;
@@ -436,7 +440,8 @@
         margin-top: 1em;;
     }
     .portfolio .container{
-        width: 95%;
+        width: 90%;
+        padding: 3em .8em;
     }
     .portfolio .container .projet{
         display: flex;
@@ -448,5 +453,14 @@
     .portfolio .container .projet:nth-of-type(2) .projet__image{
             order: -1;
         
+    }
+    .portfolio .container .projet .projet__meta .projet__title h2{
+        font-size: 1.5em;
+    }
+    .portfolio .container .projet .projet__meta .projet__desc{
+        font-size: .9em;
+        line-height: 1.5em;
+        text-align: center;
+        width: 95%;
     }
 }
