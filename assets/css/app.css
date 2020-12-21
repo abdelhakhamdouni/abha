@@ -354,7 +354,7 @@ nav a.active::after {
 .home-page .scroll-down {
   position: absolute;
   left: 50%;
-  bottom: 5em;
+  bottom: 3em;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   -webkit-animation: bounce 1.5s ease infinite;
