@@ -253,6 +253,7 @@
                 align-items: center;
                 border: 1px solid gray;
                 border-left: none;
+                padding: 1em 0;
                 .projet__title{
                     h2{
                         font-size: 3em;
@@ -262,6 +263,7 @@
                 }
                 .projet__desc{
                     width: 75%;
+                    font-size: .8em;
                 }
                 .projet__meta-metadata{
                     font-size: 2em;
