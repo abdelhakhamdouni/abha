@@ -701,6 +701,14 @@ nav a.active::after {
     font-size: 3em;
     text-align: center;
   }
+  .home-page .container .col-md-6 .my-name::after {
+    width: 50%;
+    height: 5px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin-top: 5px;
+  }
   .home-page .container .col-md-6 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -752,6 +760,10 @@ nav a.active::after {
   }
   .intro .container .card::after {
     display: none;
+  }
+  .home-page .container .col-md-6 .button-apropos {
+    font-size: .8em;
+    margin-top: 1em;
   }
   .portfolio .container {
     width: 95%;

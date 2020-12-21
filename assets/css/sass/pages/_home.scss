@@ -390,6 +390,7 @@
             left: 50%;
             transform: translateX(-50%);
             margin-top: 5px;
+        }
     }
     .home-page .container .col-md-6 {
         display: flex;
@@ -424,6 +425,10 @@
                 display: none;
             }
         }
+    }
+    .home-page .container .col-md-6 .button-apropos{
+        font-size: .8em;
+        margin-top: 1em;;
     }
     .portfolio .container{
         width: 95%;
