@@ -318,3 +318,115 @@
         }
     }
 }
+
+
+@media screen and (min-width: 1650px){
+    .home-page .container .col-md-6 .my-name{
+        font-size: 6.5em;
+    }
+    .home-page .container .col-md-6 h1{
+        font-size: 2em;
+    }
+    .home-page .container .col-md-6 .apropos{
+        font-size: 1em;
+        padding-bottom: 2em;
+    }
+}
+
+@media screen and (max-width: 1350px){
+    .home-page .container{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    nav a{
+        font-size: 1em;
+    }
+    .home-page .container .col-md-6 .my-name{
+        font-size: 4em;
+    }
+    .home-page .container .col-md-6 h1{
+        font-size: 1em;
+    }
+    .home-page .container .col-md-6 .apropos{
+        font-size: .8em;
+        padding-bottom: 2em;
+    }
+}
+
+@media screen and (max-width: 990px){
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    nav a{
+        font-size: 1em;
+    }
+    nav div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1em 0 ;
+        flex-wrap: wrap;
+        a{
+            margin: 1em;
+        }
+    }
+    .home-page .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em ;
+    }
+    .home-page .container .col-md-6 {
+        display: flex;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .home-page .container .col-md-6 .socials{
+        justify-content: center;
+        padding: 1em;
+    }
+    .home-page .container .col-md-6 h1{
+        font-size: 1em;
+        text-align: center;
+    }
+    .home-page .container .col-md-6 .apropos{
+        font-size: .8em;
+        padding-bottom: 2em;
+        display: none;
+    }
+    .intro .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .card{
+            transform: perspective(0);
+            width: 95%;
+            margin-bottom: 1em;
+            &::after{
+                display: none;
+            }
+        }
+    }
+    .portfolio .container{
+        width: 95%;
+    }
+    .portfolio .container .projet{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .portfolio .container .projet:nth-of-type(2) .projet__image{
+            order: -1;
+        
+    }
+}
