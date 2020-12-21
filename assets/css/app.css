@@ -697,6 +697,10 @@ nav a.active::after {
             align-items: center;
     padding: 1em;
   }
+  .home-page .container .col-md-6 .my-name {
+    font-size: 3em;
+    text-align: center;
+  }
   .home-page .container .col-md-6 {
     display: -webkit-box;
     display: -ms-flexbox;

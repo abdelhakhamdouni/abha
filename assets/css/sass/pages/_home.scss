@@ -381,6 +381,16 @@
         align-items: center;
         padding: 1em ;
     }
+    .home-page .container .col-md-6 .my-name{
+        font-size: 3em;
+        text-align: center;
+        &::after {
+            width: 50%;
+            height: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 5px;
+    }
     .home-page .container .col-md-6 {
         display: flex;
         height: auto;
