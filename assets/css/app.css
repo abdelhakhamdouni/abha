@@ -542,6 +542,7 @@ nav a.active::after {
           align-items: center;
   border: 1px solid gray;
   border-left: none;
+  padding: 1em 0;
 }
 
 .portfolio .container .projet .projet__meta .projet__title h2 {
@@ -552,6 +553,7 @@ nav a.active::after {
 
 .portfolio .container .projet .projet__meta .projet__desc {
   width: 75%;
+  font-size: .8em;
 }
 
 .portfolio .container .projet .projet__meta .projet__meta-metadata {
