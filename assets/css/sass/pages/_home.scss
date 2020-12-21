@@ -71,7 +71,7 @@
                 }
             }
             .my-name{
-                font-size: 6.5em;
+                font-size: 5em;
                 font-weight: 500;
                 font-family: 'Poppins', monospace;
                 color: rgba(211, 211, 211, 0.979);
@@ -103,7 +103,7 @@
                 }
             }
             h1{
-            font-size: 2em;
+            font-size: 1.5em;
             }
             .introduction{
                 position: relative;
@@ -121,7 +121,7 @@
             }
             .apropos{
                 margin-top: 1em;
-                font-size: 1em;
+                font-size: .8em;
                 line-height: 1.5em;
                 color: #f0f0f0;
             }
@@ -132,7 +132,7 @@
     .scroll-down{
         position: absolute;
         left: 50%;
-        bottom: 5em;
+        bottom: 2em;
         transform: translateX(-50%);
         animation: bounce 1.5s ease infinite ;
     }
