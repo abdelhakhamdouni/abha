@@ -283,7 +283,7 @@ nav a.active::after {
 }
 
 .home-page .container .col-md-6 .my-name {
-  font-size: 6.5em;
+  font-size: 5em;
   font-weight: 500;
   font-family: 'Poppins', monospace;
   color: rgba(211, 211, 211, 0.979);
@@ -324,7 +324,7 @@ nav a.active::after {
 }
 
 .home-page .container .col-md-6 h1 {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .home-page .container .col-md-6 .introduction {
@@ -345,7 +345,7 @@ nav a.active::after {
 
 .home-page .container .col-md-6 .apropos {
   margin-top: 1em;
-  font-size: 1em;
+  font-size: .8em;
   line-height: 1.5em;
   color: #f0f0f0;
 }
