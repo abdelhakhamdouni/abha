@@ -137,7 +137,7 @@
         animation: bounce 1.5s ease infinite ;
     }
 }
-
+/* SERVICES */
 .intro{
     position: relative;
     background-color: #202020;
@@ -145,7 +145,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5em 0;
+    padding: 5em 0 8em;
     .container{
         width: 80%;
         display: flex;
@@ -153,7 +153,7 @@
         align-items: center;
         .card{
             background-image: linear-gradient(to left, rgba(71, 71, 71, 0.747), rgba(0, 0, 0, 0.61));
-            width: 16em;
+            width: 15em;
             padding: 3em 2em;
             height: 22em;
             text-align: center;
@@ -165,6 +165,8 @@
             border-radius: 2px;
             transition: all .3s ease;
             position: relative;
+            transform: perspective(800px) rotateY(20deg);
+            text-shadow: 0 0 5px black;
             &::before{
                 content: "";
                 width: 100%;
@@ -176,7 +178,20 @@
                 mix-blend-mode: lighten;
                 clip-path:inset(0% 0% 0% 100%);
             }
+            &::after{
+                position: absolute;            
+                content: "";
+                width: 65%;
+                height: 5px;
+                bottom: -4em;
+                left: 50%;
+                transform: translateX(-50%);
+                border-radius: 50%;
+                background-color: rgba(77, 76, 76, 0.123);
+                box-shadow: 0 0 30px  rgba(233, 233, 233, 0.692);
+            }
             &:hover{
+                transform: perspective(800px) rotateY(0) scale(1.02) translateY(-10px);
                 .card__icon{
                     transform: scale(1.2);
                 }
@@ -193,14 +208,110 @@
                 text-align: center;
                 width: 8em;
                 transition: all .3s ease-in-out;
+                transform: perspective(2000px) rotateY();
+
                 img{
                     user-select: none;
                     -webkit-user-drag: none;
                 }
             }
-            text-shadow: 0 0 5px black;
             .card__title{
+                text-transform: capitalize;
                 text-align: center;
+            }
+        }
+    }
+}
+
+/*PORTFOLIO*/
+.portfolio{
+    min-height: 100vh;
+    background-color: $primary;
+    color: white;
+    .container{
+        padding: 0;
+        margin: auto;
+        padding: 5em 0 8em;
+        width: 80%;
+        .projet{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 50% auto;
+            margin-top: 1em;
+            .projet__image{
+                height: 100%;
+                img{
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+            .projet__meta{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid gray;
+                border-left: none;
+                .projet__title{
+                    h2{
+                        font-size: 3em;
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+                .projet__desc{
+                    width: 75%;
+                }
+                .projet__meta-metadata{
+                    font-size: 2em;
+                    color: rgb(241, 199, 8);
+                    span{
+                        transition: all .3s;
+                        display: inline-block;
+                        position: relative;
+                    }
+                    span::after{
+                        content: attr(data-title);
+                        position: absolute;
+                        bottom: 50%;
+                        left: -100%;
+                        display: none;
+                        font-size: .5em;
+                        transform: scale(.5);
+                        font-family: "poppins";
+                        background-color: white;
+                        border-radius: 1em;
+                        width: auto;
+                        color: rgb(31, 31, 31);
+                        padding: .5em;
+                    }
+                    span:hover{
+                        transform: scale(2);
+                        z-index: 2;
+                        color: lightgreen;
+                    }
+                    span:hover::after{
+                        display: block;
+                    }
+                }
+                button{
+                    padding: .5em 2em;
+                    margin-top: 1em;
+                    border: 1px solid lightgray;
+                    background-color: transparent;
+                    color: white;
+                    font-size: 1.3em;
+                }
+            }
+        }
+        .projet:nth-of-type(2){
+            .projet__image{
+                order: 2;
+            }
+            .projet__meta{
+                border-left: 1px solid lightgray;
+                border-right: none;
             }
         }
     }
