@@ -652,6 +652,7 @@ nav a.active::after {
 
 @media screen and (max-width: 990px) {
   nav {
+    padding-top: .5em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -662,6 +663,9 @@ nav a.active::after {
   }
   nav a {
     font-size: 1em;
+  }
+  nav a.brand {
+    margin-right: 0;
   }
   nav div {
     width: 100%;
@@ -674,7 +678,9 @@ nav a.active::after {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 1em 0;
+    padding: .5em 0;
+    -webkit-box-shadow: 0 0 3px lightgray;
+            box-shadow: 0 0 3px lightgray;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
