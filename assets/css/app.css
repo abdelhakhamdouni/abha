@@ -331,6 +331,7 @@ nav a.active::after {
   position: relative;
   padding-left: 2em;
   text-align: right;
+  margin-bottom: 0;
 }
 
 .home-page .container .col-md-6 .introduction::before {
