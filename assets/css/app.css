@@ -289,9 +289,14 @@ nav a.active::after {
   margin-bottom: .5em;
 }
 
+.home-page .container .col-md-6 .my-name span {
+  color: yellow;
+  text-transform: uppercase;
+}
+
 .home-page .container .col-md-6 .my-name::after {
   content: "";
-  width: 20%;
+  width: 22%;
   height: 10px;
   background-color: yellow;
   top: 100%;

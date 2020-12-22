@@ -393,23 +393,23 @@
             <div class="form">
               <form action="post">
                 <div class="form-row">
-                  <label for="name"> Nom, prénom ou raison sociale :</label>
-                  <input type="text" id="name" name="name" />
+                  <label for="name"> Nom, prénom ou raison sociale* :</label>
+                  <input type="text" id="name" name="name" required/>
                 </div>
                 <div class="form-row">
-                  <label for="name">E-mail :</label>
-                  <input type="email" id="email" name="email" />
+                  <label for="name">E-mail* :</label>
+                  <input type="email" id="email" name="email" required/>
                 </div>
                 <div class="form-row">
                   <label for="phone">Téléphone :</label>
                   <input type="phone" id="phone" name="phone" />
                 </div>
                 <div class="form-row">
-                  <label for="message">Message :</label>
-                  <textarea id="message" name="message" rows="15"></textarea>
+                  <label for="message">Message* :</label>
+                  <textarea id="message" name="message" rows="15" required></textarea>
                 </div>
                 <div class="form-row">
-                  <button class="btn btn-form">Envoyer mon message</button>
+                  <button type="submit" class="btn btn-form">Envoyer mon message</button>
                 </div>
               </form>
             </div>
@@ -432,6 +432,6 @@
       </footer>
       <!-- /FOOTER -->
     </div>
-    <script src="app.js"></script>
+    <script src="assets/js/app.js"></script>
   </body>
 </html>
