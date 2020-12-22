@@ -33,3 +33,15 @@ nav{
     margin: auto;
 
 }
+
+@media screen and (max-width: 990px){
+    nav{
+        position: relative;
+        background-color: #024b45;
+        padding: 0;
+        div {
+            padding: 0;
+            box-shadow: unset;
+        }
+    }
+}

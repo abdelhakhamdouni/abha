@@ -50,10 +50,10 @@
           <img src="assets/images/logo50.png" alt="logo du site" />
         </a>
         <div>
-          <a class="active" to="/">Services </a>
-          <a to="/">Projets</a>
-          <a to="/">Contact</a>
-          <a to="/">Blog</a>
+          <a href="#services">Services </a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+          <a target="_blank" href="https://ormes-web-service.fr/blog">Blog</a>
         </div>
       </nav>
       <!-- /NAVBAR -->
@@ -102,7 +102,7 @@
         </section>
         <!-- /HEADER -->
         <!-- SERVICES -->
-        <section class="services">
+        <section class="services" id="services">
           <div class="container">
             <h2 class="section_title">Mes services</h2>
             <article class="card">
@@ -175,9 +175,9 @@
             </article>
           </div>
         </section>
-        <!-- /INTRO -->
+        <!-- /SERVICES -->
         <!-- PORTFOLIO -->
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
           <article class="container">
             <h2 class="section_title">Mes Projets</h2>
             <!-- ORINOCO -->
@@ -218,8 +218,8 @@
                 <a
                   class="btn"
                   target="_blank"
-                  href="https://github.com/abdelhakhamdouni/"
-                  ><span class="fas fa-arrow-right"></span> Visiter le site</a
+                  href="https://github.com/abdelhakhamdouni/abdelhakhamdouni_05_03082020"
+                  ><span class="fas fa-desktop"></span> Visiter le site</a
                 >
               </div>
             </div>
@@ -233,7 +233,7 @@
               </div>
               <div class="projet__meta">
                 <div class="projet__title">
-                  <h2>ORINOCO</h2>
+                  <h2>GROUPOMANIA</h2>
                 </div>
                 <div class="projet__desc">
                   <p>
@@ -268,6 +268,12 @@
                   <span class="fab fa-sass" title="Sass"></span>
                   <span class="fab fa-bootstrap" title="Bootstrap"></span>
                 </div>
+                <a
+                  class="btn"
+                  target="_blank"
+                  href="https://teddies-api.herokuapp.com"
+                  ><span class="fab fa-github"></span> Voir le repos github</a
+                >
               </div>
             </div>
             <!-- CAT AMAZON -->
@@ -343,25 +349,89 @@
                   <span class="fa fa-database" title="Database Mysql"></span>
                   <span class="fab fa-css3" title="Cascading StyleSheet"></span>
                 </div>
+                <a
+                class="btn"
+                target="_blank"
+                href="https://lafleureblanche.ormes-web-service.fr"
+                ><span class="fas fa-desktop"></span> Visiter le site</a
+              >
               </div>
             </div>
           </article>
         </section>
         <!-- /PORTFOLIO -->
+        <!-- CONTACT -->
+        <section class="contact" id="contact">
+          <div class="container">
+            <h2 class="section_title">Contactez-moi</h2>
+            <div class="map">
+              <img
+                src="assets/images/map.png"
+                alt="mon adresse sur une carte de google map"
+              />
+              <div class="coords">
+                <h3>Mes Coordonnées</h3>
+                <ul>
+                  <li>
+                    <span class="fas fa-home">
+                      6 rue des glazieres 45140 Ormes, France</span
+                    >
+                  </li>
+                  <li>
+                    <span class="fas fa-phone"> 06 22 92 46 91 </span>
+                  </li>
+                  <li>
+                    <span class="fas fa-envelope">
+                      <a href="mailto:abdelhakhamdouni@sfr.fr"
+                        >@abdelhakhamdouni</a
+                      ></span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="form">
+              <form action="post">
+                <div class="form-row">
+                  <label for="name"> Nom, prénom ou raison sociale :</label>
+                  <input type="text" id="name" name="name" />
+                </div>
+                <div class="form-row">
+                  <label for="name">E-mail :</label>
+                  <input type="email" id="email" name="email" />
+                </div>
+                <div class="form-row">
+                  <label for="phone">Téléphone :</label>
+                  <input type="phone" id="phone" name="phone" />
+                </div>
+                <div class="form-row">
+                  <label for="message">Message :</label>
+                  <textarea id="message" name="message" rows="15"></textarea>
+                </div>
+                <div class="form-row">
+                  <button class="btn btn-form">Envoyer mon message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <!-- /CONTACT -->
       </main>
+      <!-- FOOTER -->
+      <footer>
+        <div class="container">
+          <div class="copywrite">Abdelhakhamdouni<span> &copy;</span> 2020</div>
+          <ul>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="https://ormes-web-service.fr/blog">Contact</a></li>
+          </ul>
+        </div>
+      </footer>
+      <!-- /FOOTER -->
     </div>
-    <script src="https://cmp.osano.com/AzZckBSEKKtEu3fdI/9e77431b-0bef-4d6c-9c65-2846df0b769c/osano.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-      difer
-    ></script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-      crossorigin="anonymous"
-    ></script>
+    <script src="app.js"></script>
   </body>
 </html>
